@@ -1,0 +1,464 @@
+﻿:root {
+  color-scheme: light;
+  --bg: #F5FFFA;
+  --surface: #ffffff;
+  --ink: #ADD8E6;
+  --muted: #61666d;
+  --line: #e3e5e7;
+  --bili-blue: #00aeec;
+  --bili-pink: #fb7299;
+  --shadow: 0 12px 30px rgba(23, 35, 53, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+  background:
+    radial-gradient(circle at 16% 6%, rgba(0, 174, 236, 0.16), transparent 28%),
+    radial-gradient(circle at 88% 8%, rgba(251, 114, 153, 0.17), transparent 24%),
+    linear-gradient(180deg, #ffffff 0, var(--bg) 260px);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bili-page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 18px 0 46px;
+}
+
+.bili-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 8px 0 18px;
+}
+
+.back-link {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 7px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--muted);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bili-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.bili-mark {
+  display: grid;
+  width: 34px;
+  height: 26px;
+  place-items: center;
+  border-radius: 7px;
+  background: var(--bili-pink);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.search-panel {
+  display: grid;
+  gap: 18px;
+  padding: clamp(18px, 4vw, 28px);
+  border: 1px solid rgba(227, 229, 231, 0.82);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(0, 174, 236, 0.12), rgba(251, 114, 153, 0.08)),
+    rgba(255, 255, 255, 0.88);
+  box-shadow: var(--shadow);
+}
+
+.title-block {
+  display: grid;
+  gap: 7px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4.2rem);
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+.bili-search,
+.show-manager {
+  display: grid;
+  gap: 10px;
+}
+
+.bili-search {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.show-manager {
+  grid-template-columns: minmax(160px, 1fr) 130px auto;
+  align-items: end;
+  padding-top: 2px;
+}
+
+.search-field,
+.manage-field {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 9px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.manage-field {
+  display: grid;
+  gap: 5px;
+  padding: 8px 12px;
+}
+
+.manage-field span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.search-field input {
+  width: 100%;
+  min-height: 44px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+}
+
+.manage-field input,
+.manage-field select {
+  width: 100%;
+  min-height: 28px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+}
+
+.bili-search button,
+.quick-chip,
+.search-link,
+.manage-add,
+.delete-show {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.bili-search button,
+.manage-add {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 18px;
+  background: var(--bili-blue);
+  color: #fff;
+}
+
+.quick-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 18px 0;
+}
+
+.quick-chip {
+  min-height: 36px;
+  padding: 0 14px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.quick-chip.is-active {
+  border-color: rgba(0, 174, 236, 0.34);
+  background: #e5f6fd;
+  color: #008ac5;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px 18px;
+}
+
+.video-card {
+  display: grid;
+  min-width: 0;
+  gap: 10px;
+}
+
+.video-cover {
+  position: relative;
+  display: grid;
+  aspect-ratio: 16 / 9;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #86d5f4, #fb9cba);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(23, 35, 53, 0.12);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.video-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-cover::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 45%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.58));
+  content: "";
+}
+
+.video-card:hover .video-cover {
+  box-shadow: 0 16px 30px rgba(0, 174, 236, 0.18);
+  transform: translateY(-3px);
+}
+
+.cover-1 {
+  background: linear-gradient(135deg, #7db6ff, #a58bff);
+}
+
+.cover-2 {
+  background: linear-gradient(135deg, #60c49f, #87dce8);
+}
+
+.cover-3 {
+  background: linear-gradient(135deg, #282c37, #fb7299);
+}
+
+.cover-4 {
+  background: linear-gradient(135deg, #f7b267, #f79d9d);
+}
+
+.cover-initial {
+  position: relative;
+  z-index: 1;
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.cover-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: rgba(24, 25, 28, 0.62);
+  color: #fff;
+  font-size: 0.76rem;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.cover-play {
+  position: absolute;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.82);
+  border-radius: 50%;
+  background: rgba(24, 25, 28, 0.28);
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 160ms ease, transform 160ms ease;
+  z-index: 2;
+}
+
+.video-card:hover .cover-play {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cover-meta {
+  position: absolute;
+  right: 9px;
+  bottom: 8px;
+  left: 9px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.36);
+  z-index: 2;
+}
+
+.cover-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.video-info {
+  display: grid;
+  min-width: 0;
+  gap: 6px;
+}
+
+.video-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.video-info h2 {
+  margin: 0;
+  display: -webkit-box;
+  min-height: 2.7em;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.video-info h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.video-info h2 a:hover {
+  color: var(--bili-blue);
+}
+
+.video-info p {
+  margin: 0;
+  display: -webkit-box;
+  min-height: 1.45em;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.search-link {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 32px;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  background: #f1f2f3;
+  color: #008ac5;
+  font-size: 0.86rem;
+}
+
+.delete-show {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  background: #fff;
+  color: #9499a0;
+}
+
+.delete-show:hover {
+  border-color: rgba(251, 114, 153, 0.42);
+  color: var(--bili-pink);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  padding: 40px 16px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
+  text-align: center;
+}
+
+.back-link:focus-visible,
+.bili-search button:focus-visible,
+.manage-add:focus-visible,
+.manage-field input:focus-visible,
+.manage-field select:focus-visible,
+.quick-chip:focus-visible,
+.search-link:focus-visible,
+.delete-show:focus-visible,
+.video-cover:focus-visible,
+.video-info h2 a:focus-visible,
+.search-field input:focus-visible {
+  outline: 3px solid rgba(0, 174, 236, 0.34);
+  outline-offset: 3px;
+}
+
+svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.2;
+}
+
+@media (max-width: 700px) {
+  .bili-page {
+    width: min(100%, 366px);
+    max-width: 366px;
+    margin-left: 12px;
+  }
+
+  .bili-header,
+  .bili-search,
+  .show-manager {
+    grid-template-columns: 1fr;
+  }
+
+  .bili-header {
+    display: grid;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

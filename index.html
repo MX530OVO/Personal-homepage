@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页</title>
+    <meta
+      name="description"
+      content="整合游戏收藏、追剧搜索、个人喜好和社交入口的个人主页。"
+    />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="./styles.css?v=202607131640" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="./script.js?v=202607100035" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到顶部">
+        <img src="./assets/avatar.svg" alt="" data-avatar-image />
+        <span>我的主页</span>
+      </a>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="#games">游戏</a>
+        <a href="#dramas">追剧</a>
+        <a href="#social">社交</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-section" aria-labelledby="profile-name">
+        <div class="hero-visual" aria-hidden="true">
+          <img src="./assets/avatar.svg" alt="" data-avatar-image />
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Game Shelf / Drama List / Social Links</p>
+          <h1 id="profile-name">我的个人主页</h1>
+          <div class="hero-actions" aria-label="快捷入口">
+            <a class="primary-action" href="#games">
+              <i data-lucide="gamepad-2" aria-hidden="true"></i>
+              查看游戏
+            </a>
+            <a class="secondary-action" href="#dramas">
+              <i data-lucide="search" aria-hidden="true"></i>
+              搜索剧集
+            </a>
+          </div>
+          <div class="avatar-tools" aria-label="头像设置">
+            <label class="avatar-upload">
+              <i data-lucide="image-plus" aria-hidden="true"></i>
+              设置头像
+              <input id="avatarInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/svg+xml" />
+            </label>
+            <button class="avatar-reset" id="avatarReset" type="button">
+              <i data-lucide="rotate-ccw" aria-hidden="true"></i>
+              恢复默认
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="games" aria-labelledby="games-title">
+        <div class="section-head">
+          <p>Game Shelf</p>
+          <h2 id="games-title">游戏收藏</h2>
+        </div>
+
+        <div class="game-grid">
+          <article class="game-card store-card">
+            <div class="game-cover">
+              <img
+                src="./assets/valorant-poster.png"
+                alt="无畏契约海报"
+              />
+            </div>
+            <div class="game-info">
+              <p class="game-platform">本机应用商城 / 自动识别设备</p>
+              <h3><strong class="game-title-main">无畏契约</strong> <span>VALORANT</span></h3>
+              <p class="game-id">
+                <span>我的 ID</span>
+                <strong>lingwu3</strong>
+              </p>
+              <p>角色制 5v5 战术射击游戏，强调精准枪法、技能配合和团队战术。</p>
+              <div class="game-tags">
+                <span>Action</span>
+                <span>Shooter</span>
+                <span>Competitive</span>
+                <span>Multiplayer</span>
+              </div>
+              <dl class="store-meta">
+                <div>
+                  <dt>开发商</dt>
+                  <dd>Riot Games</dd>
+                </div>
+                <div>
+                  <dt>发行商</dt>
+                  <dd>Riot Games</dd>
+                </div>
+                <div>
+                  <dt>平台</dt>
+                  <dd>Windows</dd>
+                </div>
+                <div>
+                  <dt>发行日期</dt>
+                  <dd>2020-06-02</dd>
+                </div>
+              </dl>
+              <a class="game-official-link" href="https://val.qq.com/main.html" target="_blank" rel="noreferrer">
+                无畏契约官网
+              </a>
+            </div>
+            <a
+              class="download-link store-download"
+              href="market://search?q=%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6"
+              data-store-keyword="无畏契约 VALORANT"
+              data-huawei-uri="appmarket://search?keyword=%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6"
+              data-android-uri="market://search?q=%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6"
+              data-windows-uri="appmarket://search?keyword=%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6"
+              data-ios-uri="itms-apps://itunes.apple.com/search?term=%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6&media=software"
+              data-web-fallback="https://appgallery.huawei.com/"
+            >
+              <i data-lucide="store" aria-hidden="true"></i>
+              打开本机应用商城
+            </a>
+          </article>
+
+          <article class="game-card store-card">
+            <div class="game-cover">
+              <img
+                src="https://cdn1.epicgames.com/spt-assets/5e13bf477ca8474e9bd01ae88d6710e7/delta-force-1dbyp.jpg?h=270&quality=medium&resize=1&w=480"
+                alt="三角洲行动商店展示图"
+              />
+            </div>
+            <div class="game-info">
+              <p class="game-platform">本机应用商城 / 自动识别设备</p>
+              <h3><strong class="game-title-main">三角洲行动</strong> <span>Delta Force</span></h3>
+              <p class="game-id">
+                <span>我的 ID</span>
+                <strong>oo白泽oo</strong>
+              </p>
+              <p>经典战术射击系列回归，包含多人对抗、合作行动等模式。</p>
+              <div class="game-tags">
+                <span>射击</span>
+                <span>战术</span>
+                <span>多人在线</span>
+                <span>合作</span>
+              </div>
+              <dl class="store-meta">
+                <div>
+                  <dt>开发商</dt>
+                  <dd>Team Jade</dd>
+                </div>
+                <div>
+                  <dt>发行商</dt>
+                  <dd>TiMi Studio Group</dd>
+                </div>
+                <div>
+                  <dt>平台</dt>
+                  <dd>Windows</dd>
+                </div>
+                <div>
+                  <dt>发行日期</dt>
+                  <dd>2024-12-04</dd>
+                </div>
+              </dl>
+            </div>
+            <a
+              class="download-link store-download"
+              href="market://search?q=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8"
+              data-store-keyword="三角洲行动 Delta Force"
+              data-huawei-uri="appmarket://search?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8"
+              data-android-uri="market://search?q=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8"
+              data-windows-uri="appmarket://search?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8"
+              data-ios-uri="itms-apps://itunes.apple.com/search?term=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8&media=software"
+              data-web-fallback="https://appgallery.huawei.com/"
+            >
+              <i data-lucide="store" aria-hidden="true"></i>
+              打开本机应用商城
+            </a>
+          </article>
+
+          <article class="game-card">
+            <div class="game-cover">
+              <img
+                src="./assets/ID5-cropped.jpeg"
+                alt="第五人格商店展示图"
+              />
+            </div>
+            <div class="game-info">
+              <p class="game-platform">本机应用商城 / 自动识别设备</p>
+              <h3><strong class="game-title-main">第五人格</strong> <span>Identity V</span></h3>
+              <p class="game-id">
+                <span>我的 ID</span>
+                <strong>凉拌猫薄荷OAO</strong>
+              </p>
+              <p>网易出品的非对称竞技手游，玩家可扮演求生者或监管者，在哥特悬疑庄园中展开追逃对抗。</p>
+              <div class="game-tags">
+                <span>非对称竞技</span>
+                <span>悬疑</span>
+                <span>多人在线</span>
+                <span>网易游戏</span>
+              </div>
+              <dl class="store-meta">
+                <div>
+                  <dt>开发商</dt>
+                  <dd>NetEase Games</dd>
+                </div>
+                <div>
+                  <dt>发行商</dt>
+                  <dd>NetEase Games</dd>
+                </div>
+                <div>
+                  <dt>平台</dt>
+                  <dd>Android / iOS</dd>
+                </div>
+                <div>
+                  <dt>类型</dt>
+                  <dd>非对称竞技</dd>
+                </div>
+              </dl>
+            </div>
+            <a
+              class="download-link store-download"
+              href="market://search?q=%E7%AC%AC%E4%BA%94%E4%BA%BA%E6%A0%BC"
+              data-store-keyword="第五人格 Identity V"
+              data-huawei-uri="appmarket://search?keyword=%E7%AC%AC%E4%BA%94%E4%BA%BA%E6%A0%BC"
+              data-android-uri="market://search?q=%E7%AC%AC%E4%BA%94%E4%BA%BA%E6%A0%BC"
+              data-windows-uri="appmarket://search?keyword=%E7%AC%AC%E4%BA%94%E4%BA%BA%E6%A0%BC"
+              data-ios-uri="itms-apps://itunes.apple.com/search?term=%E7%AC%AC%E4%BA%94%E4%BA%BA%E6%A0%BC&media=software"
+              data-web-fallback="https://appgallery.huawei.com/"
+            >
+              <i data-lucide="store" aria-hidden="true"></i>
+              打开本机应用商城
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section drama-section" id="dramas" aria-labelledby="dramas-title">
+        <div class="section-head">
+          <p>Drama Shelf</p>
+          <h2 id="dramas-title">追剧入口</h2>
+        </div>
+
+        <form class="bili-search" id="biliSearchForm">
+          <label class="search-field">
+            <i data-lucide="search" aria-hidden="true"></i>
+            <input
+              id="biliSearchInput"
+              type="search"
+              autocomplete="off"
+              placeholder="输入剧名后搜索 B 站"
+            />
+          </label>
+          <button type="submit">
+            <i data-lucide="external-link" aria-hidden="true"></i>
+            搜索
+          </button>
+        </form>
+
+        <form class="show-manager" id="showManagerForm" aria-label="添加剧名">
+          <label class="manage-field">
+            <span>剧名</span>
+            <input id="showTitleInput" type="text" autocomplete="off" maxlength="40" required />
+          </label>
+          <label class="manage-field">
+            <span>分类</span>
+            <select id="showTypeInput">
+              <option>国剧</option>
+              <option>日剧</option>
+              <option>英剧</option>
+              <option>美剧</option>
+              <option>动漫</option>
+              <option>电影</option>
+            </select>
+          </label>
+          <label class="manage-field poster-field">
+            <span>海报链接（可选）</span>
+            <input id="showPosterInput" type="url" autocomplete="off" placeholder="粘贴 B 站海报图片地址" />
+          </label>
+          <button class="manage-add" type="submit">
+            <i data-lucide="plus" aria-hidden="true"></i>
+            添加
+          </button>
+        </form>
+
+        <div class="quick-strip" aria-label="追剧分类">
+          <button class="quick-chip is-active" type="button" data-type="all">全部</button>
+          <button class="quick-chip" type="button" data-type="国剧">国剧</button>
+          <button class="quick-chip" type="button" data-type="日剧">日剧</button>
+          <button class="quick-chip" type="button" data-type="英剧">英剧</button>
+          <button class="quick-chip" type="button" data-type="美剧">美剧</button>
+          <button class="quick-chip" type="button" data-type="动漫">动漫</button>
+          <button class="quick-chip" type="button" data-type="电影">电影</button>
+        </div>
+
+        <div class="video-grid" id="videoGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="content-section social-section" id="social" aria-labelledby="social-title">
+        <div class="section-head">
+          <p>Find Me</p>
+          <h2 id="social-title">社交链接</h2>
+        </div>
+
+        <nav class="social-grid" aria-label="社交平台链接">
+          <a class="social-link" href="https://m.bilibili.com/space/3546391573956815" target="_blank" rel="noreferrer">
+            <i data-lucide="video" aria-hidden="true"></i>
+            <span>B 站</span>
+          </a>
+          <a class="social-link" href="https://www.xiaohongshu.com/search_result?keyword=5613197007&type=user" target="_blank" rel="noreferrer">
+            <i data-lucide="book-open" aria-hidden="true"></i>
+            <span>小红书</span>
+          </a>
+          <a class="social-link" href="https://weibo.com/" target="_blank" rel="noreferrer">
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            <span>微博</span>
+          </a>
+          <a class="social-link" href="mailto:hello@example.com">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            <span>邮箱</span>
+          </a>
+          <a class="social-link" href="https://music.163.com/" target="_blank" rel="noreferrer">
+            <i data-lucide="music" aria-hidden="true"></i>
+            <span>网易云音乐</span>
+          </a>
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">温暖游戏头像插画</title>
+  <desc id="desc">圆形背景里的短发角色，周围有月亮、游戏手柄和星星。</desc>
+  <rect width="512" height="512" rx="112" fill="#F8F1E7"/>
+  <circle cx="256" cy="260" r="196" fill="#EADFCE"/>
+  <circle cx="256" cy="260" r="174" fill="#FFF9EE"/>
+  <path d="M154 148c-20 40-16 94 10 128l12-58c4-20 16-38 34-48 18-10 42-16 70-14 43 3 76 28 88 64l12 55c28-33 32-92 7-135-40-68-192-72-233 8Z" fill="#2C2722"/>
+  <path d="M157 164c34-48 148-73 218 2-39-24-102-24-145-4-27 12-49 28-73 2Z" fill="#4B4038"/>
+  <path d="M165 236c2-56 41-102 93-102h4c52 0 93 46 93 102v47c0 56-42 102-95 102h-1c-52 0-94-46-94-102v-47Z" fill="#F3C7AC"/>
+  <path d="M140 257c0-19 12-34 27-34v68c-15 0-27-15-27-34Z" fill="#E9B598"/>
+  <path d="M345 223c15 0 27 15 27 34s-12 34-27 34v-68Z" fill="#E9B598"/>
+  <path d="M199 249c0-11 8-20 18-20s18 9 18 20" stroke="#2C2722" stroke-width="12" stroke-linecap="round"/>
+  <path d="M282 249c0-11 8-20 18-20s18 9 18 20" stroke="#2C2722" stroke-width="12" stroke-linecap="round"/>
+  <path d="M241 295c11 9 28 9 39 0" stroke="#9A5D4F" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="204" cy="278" r="20" fill="#EE9FAE" opacity=".72"/>
+  <circle cx="312" cy="278" r="20" fill="#EE9FAE" opacity=".72"/>
+  <path d="M168 234c24-11 47-32 62-61 38 42 85 54 127 58-9-73-47-110-101-110-57 0-96 45-88 113Z" fill="#2C2722"/>
+  <path d="M191 361c13 25 38 42 69 42 30 0 57-18 70-43 43 15 71 51 78 100H107c8-50 38-86 84-99Z" fill="#8AA887"/>
+  <path d="M217 383c24 18 59 18 84 0l16 77H201l16-77Z" fill="#FFF9EE"/>
+  <path d="M166 392h50v22h-50v-22ZM300 392h50v22h-50v-22Z" fill="#77A9C8"/>
+  <path d="M257 397h28v22h22v28h-22v22h-28v-22h-22v-28h22v-22Z" fill="#E77964"/>
+  <path d="M102 156c34-3 59-31 58-65 18 26 47 42 79 42-25 18-40 48-39 79-22-25-57-36-98-56Z" fill="#F0A7B3"/>
+  <path d="M394 118c-18 23-48 31-75 20 18 24 20 56 5 82 26-17 59-18 86-2-12-31-18-64-16-100Z" fill="#77A9C8"/>
+  <rect x="79" y="287" width="64" height="42" rx="12" fill="#25211D"/>
+  <rect x="97" y="299" width="10" height="18" fill="#FFF9EE"/>
+  <rect x="93" y="303" width="18" height="10" fill="#FFF9EE"/>
+  <circle cx="124" cy="308" r="5" fill="#E77964"/>
+  <circle cx="136" cy="308" r="5" fill="#8AA887"/>
+  <rect x="374" y="293" width="52" height="52" rx="10" fill="#25211D"/>
+  <path d="M389 321h22M400 310v22" stroke="#FFF9EE" stroke-width="8" stroke-linecap="round"/>
+  <path d="M75 226h18v18H75v-18ZM427 248h18v18h-18v-18ZM371 78h18v18h-18V78ZM111 372h18v18h-18v-18Z" fill="#E77964"/>
+  <path d="M67 104c18 6 37-3 43-21 8 17 25 28 43 26-14 12-19 31-12 48-16-10-36-11-53-2 9-17 4-38-21-51Z" fill="#8AA887"/>
+  <path d="M415 372c24 3 45-16 45-40 13 19 36 29 59 23-17 16-22 42-12 63-20-13-46-14-67-2 9-18 1-35-25-44Z" fill="#F0A7B3"/>
+</svg>

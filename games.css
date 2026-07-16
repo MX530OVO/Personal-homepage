@@ -1,0 +1,345 @@
+﻿:root {
+  color-scheme: light;
+  --paper: #F5FFFA;
+  --surface: #fffdf7;
+  --ink: #ADD8E6;
+  --muted: #736b61;
+  --line: rgba(37, 33, 29, 0.13);
+  --green: #2f7d54;
+  --green-soft: #e6f0e8;
+  --coral: #e77964;
+  --rose: #e9a3ac;
+  --blue: #77a9c8;
+  --blue-deep: #147fa8;
+  --shadow: 0 18px 48px rgba(74, 58, 42, 0.13);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--paper);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  font-family:
+    "Inter", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui,
+    sans-serif;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    radial-gradient(circle at 12% 8%, rgba(119, 169, 200, 0.16), transparent 26%),
+    radial-gradient(circle at 88% 18%, rgba(231, 121, 100, 0.16), transparent 24%),
+    linear-gradient(135deg, #fbf4e9 0%, #eef7f2 52%, #f9e8e2 100%);
+  background-size:
+    34px 34px,
+    34px 34px,
+    auto,
+    auto,
+    auto;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.game-page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 26px 0 48px;
+}
+
+.game-hero {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 22px;
+  align-items: end;
+  padding: 18px 0 22px;
+}
+
+.back-link,
+.download-link {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.back-link {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 13px;
+  background: rgba(255, 253, 247, 0.74);
+  color: var(--blue-deep);
+  font-weight: 800;
+}
+
+.back-link:hover,
+.download-link:hover {
+  transform: translateY(-2px);
+}
+
+.game-kicker {
+  margin: 0 0 8px;
+  color: var(--blue-deep);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.45rem, 7vw, 4.8rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.game-intro {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.feature-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+.feature-strip span {
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 253, 247, 0.68);
+}
+
+.feature-strip strong {
+  color: var(--blue-deep);
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.game-card {
+  display: grid;
+  min-width: 0;
+  grid-template-rows: auto 1fr auto;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 247, 0.74);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.game-cover {
+  display: grid;
+  min-height: 150px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(37, 33, 29, 0.1);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.game-cover img {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  object-fit: cover;
+}
+
+.game-cover svg {
+  width: 42px;
+  height: 42px;
+  stroke-width: 2.1;
+}
+
+.store-cover {
+  min-height: 180px;
+  background: #151515;
+}
+
+.cover-warm {
+  background:
+    linear-gradient(135deg, rgba(231, 121, 100, 0.18), rgba(233, 163, 172, 0.28)),
+    var(--surface);
+  color: var(--coral);
+}
+
+.cover-blue {
+  background:
+    linear-gradient(135deg, rgba(119, 169, 200, 0.22), rgba(255, 253, 247, 0.84)),
+    var(--surface);
+  color: var(--blue-deep);
+}
+
+.cover-green {
+  background:
+    linear-gradient(135deg, rgba(47, 125, 84, 0.18), rgba(255, 253, 247, 0.84)),
+    var(--surface);
+  color: var(--green);
+}
+
+.game-info {
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 8px;
+}
+
+.game-platform {
+  margin: 0;
+  color: var(--green);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.game-info h2 {
+  margin: 0;
+  font-size: 1.24rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.game-info h2 span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.game-info p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.game-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.game-tags span {
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: rgba(20, 127, 168, 0.1);
+  color: var(--blue-deep);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.store-meta {
+  display: grid;
+  gap: 6px;
+  margin: 2px 0 0;
+}
+
+.store-meta div {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+}
+
+.store-meta dt,
+.store-meta dd {
+  margin: 0;
+}
+
+.store-meta dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.store-meta dd {
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+.download-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: var(--ink);
+  color: #fffdf7;
+  font-weight: 900;
+}
+
+.download-link:hover {
+  background: #3c352f;
+  box-shadow: 0 12px 22px rgba(37, 33, 29, 0.16);
+}
+
+.back-link:focus-visible,
+.download-link:focus-visible {
+  outline: 3px solid rgba(119, 169, 200, 0.46);
+  outline-offset: 3px;
+}
+
+svg {
+  width: 19px;
+  height: 19px;
+  stroke-width: 2.2;
+}
+
+@media (max-width: 860px) {
+  .game-page {
+    width: min(680px, calc(100% - 24px));
+    padding-top: 16px;
+  }
+
+  .game-hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .game-page {
+    width: min(100%, 366px);
+    max-width: 366px;
+    margin-right: auto;
+    margin-left: 12px;
+  }
+
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
