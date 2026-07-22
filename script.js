@@ -6,7 +6,7 @@ const previewStorageKey = "personal-homepage-show-previews";
 const legacyStorageKey = "bili-drama-shows";
 const legacyPreviewStorageKey = "bili-drama-previews";
 const avatarStorageKey = "personal-homepage-avatar";
-const defaultAvatarUrl = "./assets/avatar.svg";
+const defaultAvatarUrl = "./assets/avatar-clove.webp";
 
 const knownBiliMedia = [
   {
